@@ -35,6 +35,16 @@ distractor wrong en masse, the teacher learns what to reteach. Include a
 **Blueprint approval is optional.** Show the table, then continue after a beat
 unless the user interrupts. Do not block on approval for a 20-mark test.
 
+**Sections by question type.** Group slots by `type` (MCQ, Short Answer,
+Numerical, ...) into labelled sections, in the type's natural order from the
+blueprint. Each section restarts question numbering at 1. Section header states
+the section's mark total, e.g. `Section A — Multiple Choice (6 marks)`.
+
+**Marks on the right.** Print each question's mark value flush right on the
+question's own line, e.g. `1. What is X?` on the left, `[2]` right-aligned on
+the same line. Section headers likewise right-align their total, e.g.
+`Section A — Multiple Choice` left, `[6]` right.
+
 ## Output
 
 - `class-test.md` — student-facing

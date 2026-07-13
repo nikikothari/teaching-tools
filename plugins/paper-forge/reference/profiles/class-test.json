@@ -7,7 +7,7 @@
     "duration_minutes": 30,
     "type_mix": { "mcq": 0.30, "short_answer": 0.50, "numerical": 0.20, "long_answer": 0.0 },
     "difficulty_mix": { "easy": 0.40, "medium": 0.50, "hard": 0.10 },
-    "sections": false,
+    "sections": true,
     "internal_choice": false
   },
   "ask_user": ["topics_covered", "level"],
