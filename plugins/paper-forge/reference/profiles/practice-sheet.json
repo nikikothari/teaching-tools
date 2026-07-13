@@ -1,0 +1,20 @@
+{
+  "profile": "practice_sheet",
+  "stakes": "none",
+  "scope": "narrow",
+  "defaults": {
+    "question_count": 20,
+    "marks": false,
+    "difficulty_ladder": true,
+    "type_mix": { "mcq": 0.25, "short_answer": 0.30, "numerical": 0.45, "long_answer": 0.0 },
+    "difficulty_mix": { "easy": 0.40, "medium": 0.40, "hard": 0.20 },
+    "worked_example_per_section": true
+  },
+  "ask_user": ["topics_covered", "level", "question_count"],
+  "blueprint_approval": "optional",
+  "item_writer_mode": "practice",
+  "critic_strictness": "medium",
+  "coverage_rule": "spiral",
+  "max_slots_per_topic_pct": 100,
+  "outputs": ["practice-sheet.md", "solutions.md"]
+}

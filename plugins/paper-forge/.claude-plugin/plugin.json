@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "paper-forge",
+  "displayName": "Paper Forge",
+  "description": "Generate exams, class tests, practice sheets, and quizzes from course material",
+  "author": { "name": "Niki Kothari", "email": "niki.bhogar@gmail.com" },
+  "license": "MIT",
+  "keywords": ["education", "assessment", "teaching", "exam", "worksheet"]
+}

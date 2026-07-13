@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "teaching-tools",
+  "owner": {
+    "name": "Niki Kothari",
+    "email": "niki.bhogar@gmail.com"
+  },
+  "metadata": {
+    "description": "Assessment and classroom tooling for teachers",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "paper-forge",
+      "source": "./plugins/paper-forge",
+      "description": "Generate final exams, class tests, practice sheets, and quizzes from course material (text, images, or PDFs)",
+      "category": "education",
+      "keywords": ["education", "assessment", "exam", "worksheet", "teaching"]
+    }
+  ]
+}

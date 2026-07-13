@@ -1,0 +1,20 @@
+{
+  "profile": "final_exam",
+  "stakes": "high",
+  "scope": "full_syllabus",
+  "defaults": {
+    "total_marks": 80,
+    "duration_minutes": 180,
+    "type_mix": { "mcq": 0.20, "short_answer": 0.35, "numerical": 0.15, "long_answer": 0.30 },
+    "difficulty_mix": { "easy": 0.30, "medium": 0.50, "hard": 0.20 },
+    "sections": true,
+    "internal_choice": true
+  },
+  "ask_user": ["level", "total_marks", "duration_minutes", "syllabus_units"],
+  "blueprint_approval": "required",
+  "item_writer_mode": "exam",
+  "critic_strictness": "maximum",
+  "coverage_rule": "every_unit_min_one_slot",
+  "max_slots_per_topic_pct": 30,
+  "outputs": ["question-paper.md", "answer-key.md", "blueprint.json"]
+}

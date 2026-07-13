@@ -1,0 +1,19 @@
+{
+  "profile": "quick_quiz",
+  "stakes": "none",
+  "scope": "single_concept",
+  "defaults": {
+    "question_count": 8,
+    "duration_minutes": 5,
+    "type_mix": { "mcq": 0.75, "true_false": 0.25, "short_answer": 0.0, "numerical": 0.0, "long_answer": 0.0 },
+    "difficulty_mix": { "easy": 0.50, "medium": 0.50, "hard": 0.0 },
+    "marks": false
+  },
+  "ask_user": ["concept"],
+  "blueprint_approval": "skip",
+  "item_writer_mode": "recall",
+  "critic_strictness": "high",
+  "coverage_rule": "single_concept_facets",
+  "max_slots_per_topic_pct": 100,
+  "outputs": ["quiz.md"]
+}

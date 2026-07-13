@@ -1,0 +1,20 @@
+{
+  "profile": "class_test",
+  "stakes": "medium",
+  "scope": "narrow",
+  "defaults": {
+    "total_marks": 20,
+    "duration_minutes": 30,
+    "type_mix": { "mcq": 0.30, "short_answer": 0.50, "numerical": 0.20, "long_answer": 0.0 },
+    "difficulty_mix": { "easy": 0.40, "medium": 0.50, "hard": 0.10 },
+    "sections": false,
+    "internal_choice": false
+  },
+  "ask_user": ["topics_covered", "level"],
+  "blueprint_approval": "optional",
+  "item_writer_mode": "exam",
+  "critic_strictness": "high",
+  "coverage_rule": "every_named_topic_min_one_slot",
+  "max_slots_per_topic_pct": 60,
+  "outputs": ["class-test.md", "answer-key.md"]
+}
