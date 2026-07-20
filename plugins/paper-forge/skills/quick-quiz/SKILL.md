@@ -35,7 +35,8 @@ Generate, critique, ship. The whole interaction should take one turn.
 
 ## Output
 
-A single file, `quiz.md`, with two parts separated by a horizontal rule:
+A single sheet, delivered as `{subject}-quiz.pdf` and `{subject}-quiz.docx`,
+with two parts separated by a horizontal rule:
 
 - Questions, numbered, no answers
 - An answer line below the rule: `1. b  2. a  3. True ...`

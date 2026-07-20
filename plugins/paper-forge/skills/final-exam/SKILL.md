@@ -49,6 +49,6 @@ permitted aids (calculator, data sheet) if the paper contains numericals.
 
 ## Output
 
-- `question-paper.md` — student-facing, no answers anywhere
-- `answer-key.md` — answers, worked solutions, rubrics, source anchors
-- `blueprint.json` — the approved blueprint, so the paper can be regenerated
+- `{subject}-question-paper.pdf` / `.docx` — student-facing, no answers anywhere
+- `{subject}-answer-key.pdf` / `.docx` — answers, worked solutions, rubrics, source anchors
+- `{subject}-blueprint.json` — the approved blueprint, so the paper can be regenerated

@@ -17,5 +17,8 @@
   "coverage_rule": "every_named_topic_min_one_slot",
   "max_slots_per_topic_pct": 60,
   "output_dir": "generated-papers/class-test",
-  "outputs": ["{subject}-class-test.md", "{subject}-answer-key.md"]
+  "outputs": [
+    "{subject}-class-test.pdf", "{subject}-class-test.docx",
+    "{subject}-answer-key.pdf", "{subject}-answer-key.docx"
+  ]
 }

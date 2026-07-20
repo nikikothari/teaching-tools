@@ -17,5 +17,9 @@
   "coverage_rule": "every_unit_min_one_slot",
   "max_slots_per_topic_pct": 30,
   "output_dir": "generated-papers/final-exam",
-  "outputs": ["{subject}-question-paper.md", "{subject}-answer-key.md", "{subject}-blueprint.json"]
+  "outputs": [
+    "{subject}-question-paper.pdf", "{subject}-question-paper.docx",
+    "{subject}-answer-key.pdf", "{subject}-answer-key.docx",
+    "{subject}-blueprint.json"
+  ]
 }

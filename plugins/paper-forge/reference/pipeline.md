@@ -75,9 +75,28 @@ Derive `{subject}` once: a short kebab-case slug from the topic map's subject
 or chapter name (e.g. `photosynthesis`, `thermodynamics-ch4`). If the material
 gives no clear subject name, ask the user for one rather than guessing.
 
-Create the profile's `output_dir` if it does not exist. Write each filename in
-the profile's `outputs` array into that folder, substituting `{subject}`. Each
+Create the profile's `output_dir` if it does not exist. The profile's `outputs`
+array names the final deliverables — `.pdf` and `.docx`, never `.md`. Each
 paper type keeps its own folder — files never land loose at the project root.
+
+Build each deliverable in two steps:
+
+1. Write the full markdown content to a staging file (same folder, same name,
+   `.md` extension) — this is scratch, not a deliverable.
+2. Convert it with `pandoc`:
+   - **DOCX**: `pandoc staging.md -o {subject}-<name>.docx --resource-path=.`
+   - **PDF**: pandoc's own PDF engines mishandle embedded local images on
+     Windows, so go through HTML: `pandoc staging.md -o staging.html
+     --standalone --embed-resources --metadata title="..."`, then print that
+     HTML headlessly with the system browser: `msedge --headless
+     --disable-gpu --no-pdf-header-footer --print-to-pdf={subject}-<name>.pdf
+     "file:///<absolute path to staging.html>"`. If `pandoc` or `msedge` is
+     not on PATH, locate the installed binary (`Get-Command`, or the usual
+     WinGet package folders) rather than asking the user to install anything
+     — both are expected to already be present.
+
+Delete the `.md` and `.html` staging files once the conversions succeed. Only
+the files named in `outputs` should remain in `output_dir`.
 
 Compose the student-facing file's header using the branding assets (or
 default) resolved in Phase 1, then an instructions block sized to the

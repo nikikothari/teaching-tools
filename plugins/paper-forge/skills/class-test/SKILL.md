@@ -47,9 +47,9 @@ the same line. Section headers likewise right-align their total, e.g.
 
 ## Output
 
-- `class-test.md` — student-facing
-- `answer-key.md` — answers, source anchors, and a **misconception map**: which
-  distractor indicates which gap in understanding
+- `{subject}-class-test.pdf` / `.docx` — student-facing
+- `{subject}-answer-key.pdf` / `.docx` — answers, source anchors, and a
+  **misconception map**: which distractor indicates which gap in understanding
 
 ## Reteach note
 

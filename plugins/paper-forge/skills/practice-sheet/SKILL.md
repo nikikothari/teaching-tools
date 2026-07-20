@@ -46,7 +46,7 @@ Do not over-reject here — but groundedness is still absolute.
 
 ## Output
 
-- `practice-sheet.md` — questions, difficulty labels, hints, worked examples
-- `solutions.md` — full solutions with the wrong-approach note
+- `{subject}-practice-sheet.pdf` / `.docx` — questions, difficulty labels, hints, worked examples
+- `{subject}-solutions.pdf` / `.docx` — full solutions with the wrong-approach note
 
 Both are student-facing. The student is meant to try first, then check.
