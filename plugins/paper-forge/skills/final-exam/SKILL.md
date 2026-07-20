@@ -44,9 +44,8 @@ before they do.
 
 ## Paper header
 
-Generate an instructions block: total marks, duration, general instructions,
-section-wise attempt rules, and whether calculators or data sheets are permitted.
-Ask about permitted aids if the paper contains numericals.
+Full detail per the pipeline's `stakes: high` instruction block. Ask about
+permitted aids (calculator, data sheet) if the paper contains numericals.
 
 ## Output
 

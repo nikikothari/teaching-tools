@@ -15,5 +15,6 @@
   "critic_strictness": "high",
   "coverage_rule": "single_concept_facets",
   "max_slots_per_topic_pct": 100,
-  "outputs": ["quiz.md"]
+  "output_dir": "generated-papers/quick-quiz",
+  "outputs": ["{subject}-quiz.md"]
 }

@@ -16,5 +16,6 @@
   "critic_strictness": "medium",
   "coverage_rule": "spiral",
   "max_slots_per_topic_pct": 100,
-  "outputs": ["practice-sheet.md", "solutions.md"]
+  "output_dir": "generated-papers/practice-sheet",
+  "outputs": ["{subject}-practice-sheet.md", "{subject}-solutions.md"]
 }

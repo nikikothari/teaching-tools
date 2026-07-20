@@ -22,6 +22,17 @@ Apply the profile's `scope` rule:
 - `narrow` — ask the user which topics; refuse to generate beyond them.
 - `single_concept` — one topic only, drilled in depth.
 
+Separately, check the supplied files for **branding assets**: a school logo
+image, a school/institution name, a paper title, or a reference paper whose
+header and instruction wording should be matched. These are formatting inputs,
+not content — they produce no topic-map entries.
+
+- If any are supplied, reuse them as given: same logo file, same name, same
+  title, same instruction phrasing and layout style as the reference.
+- If none are supplied, fall back to a generic default header: no logo, a
+  plain title built from `{subject} — {paper type}`, and a placeholder school
+  name line the user can find-and-replace.
+
 ## Phase 2 — Resolve the spec
 
 Start from the profile's defaults. Ask the user only for what the profile marks
@@ -60,7 +71,29 @@ user rather than dropping it silently.
 
 ## Phase 6 — Assemble
 
-Write the files named in the profile's `outputs` array. Before writing:
+Derive `{subject}` once: a short kebab-case slug from the topic map's subject
+or chapter name (e.g. `photosynthesis`, `thermodynamics-ch4`). If the material
+gives no clear subject name, ask the user for one rather than guessing.
+
+Create the profile's `output_dir` if it does not exist. Write each filename in
+the profile's `outputs` array into that folder, substituting `{subject}`. Each
+paper type keeps its own folder — files never land loose at the project root.
+
+Compose the student-facing file's header using the branding assets (or
+default) resolved in Phase 1, then an instructions block sized to the
+profile's `stakes`:
+
+- `high` — full detail, matching a real board paper: exam name, subject,
+  maximum marks, time allowed, a reading-time note if reading time is
+  separate from writing time, "answers on paper provided separately" where
+  applicable, section-wise attempt rules (e.g. "attempt all of Section A and
+  any four of Section B"), a note that marks are shown in brackets, and
+  permitted aids (calculator, data sheet) if asked about.
+- `medium` or `none` — only the essentials: attempt-all note, total marks
+  (if any), time allowed. Skip reading-time notes, aid permissions, and other
+  minutiae — a class test or practice sheet is not the place for them.
+
+Before writing:
 
 1. Sum the marks. They must equal the target exactly.
 2. Confirm every item has a non-empty source anchor.
